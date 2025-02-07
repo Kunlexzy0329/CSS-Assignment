@@ -1,0 +1,260 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.sub-body{
+    max-width: 1320px;
+    width: 100%;
+    background: #F7FDFC;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 0 10px;
+}
+
+
+.sub-body .aref a{
+    position: absolute;
+    top: -3%;
+    left: 0;
+    font-size: 12px;
+    text-decoration: none;
+    color: #737373;
+    box-shadow: 0 0 10px;
+    background:  #F7FDFC;
+    padding: 2px;
+}
+
+/*----------------------------left-side--------------------------------*/
+
+.left-side{
+    flex-basis: 48%;
+    display: flex;
+    align-self: center;
+    margin: 0 10%;
+    padding-right: 10px; 
+}
+
+.frame{
+    display: flex;
+    flex-direction: column;
+}
+
+.imag{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.imag img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;   
+}
+
+.frame h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color:#000B0A; ;
+}
+
+.frame span{
+    font-size: 14px;
+    font-weight: 400;
+    color:#737373;
+}
+
+
+/*-----------------right-side-----------------------------*/
+.right-side{
+    flex-basis: 48%;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-right: 10%; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.frame2{
+    width:100%;
+}
+
+form .inbox{
+    display: flex;
+}
+
+
+.frame2 form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .inbox{
+    width: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;   
+}
+
+.inbox p{
+    font-size: 15px;
+    padding: 10px 0;
+    font-weight: 400;
+    color: #011C34;
+}
+
+
+form .inbox .input-box{
+    padding: 10px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(192, 192, 192, 0.24);
+    outline: none;
+}
+
+form .inbox1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.inbox1 p{
+    font-size: 15px;
+    padding: 10px 0;
+    font-weight: 400;
+    color: #011C34;
+}
+
+.inbox1 i{
+    position: absolute;
+    top: 65%;
+    right: 0;
+    padding: 3px;
+}
+
+form .inbox1 .input-box{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(192, 192, 192, 0.24);
+    outline: none;
+}
+
+form .inbox2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 5%;
+    background: #2EC4B6;
+
+}
+
+.inbox2 a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+
+}
+
+form .inbox3{
+    margin-top: 3%;
+    font-size: 13px;
+    padding: 5px 5%;
+}
+
+.inbox3 a{
+    color: #2EC4B6;
+    text-decoration: none;
+}
+
+/* Responsive Design (Mobile Mode) */
+@media (max-width: 768px) {
+   
+.sub-body{
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    padding: 20px; 
+    margin-top: 5%;  
+}
+
+.left-side,.right-side{
+    width: 100%;
+ }
+
+
+.frame2 form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+}
+
+form .inbox{
+    width: 100%;   
+}
+.sub-body .aref a{
+    top: -2%;
+}
+
+
+.frame h2{
+    font-size: 25px;
+}
+}
+
+@media (max-width: 480px) {
+          
+.sub-body{
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    padding: 20px; 
+    margin-top: 90%;  
+}
+
+.left-side,.right-side{
+    width: 100%;
+    margin-bottom: 20px;
+ }
+
+
+.frame2 form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+}
+
+form .inbox{
+    width: 100%;   
+}
+
+.sub-body .aref a{
+    top: -2%;
+}
+
+}
